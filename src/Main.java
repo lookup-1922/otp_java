@@ -8,5 +8,3 @@ class Main {
     });
   }
 }
-
-// jar cfm TOTPGenerator.jar MANIFEST.MF *.class

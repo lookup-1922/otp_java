@@ -18,11 +18,14 @@ Java Swingを使用したデスクトップ向けTOTP（Time-based One-Time Pass
 
 ## Build
 
+プロジェクトのルートディレクトリで、以下のコマンドを実行してください。
+
 ```bash
-cd src
-javac Main.java TOTPFrame.java TOTPGenerator.java Base32.java
-jar cfm TOTPGenerator.jar MANIFEST.MF *.class
+javac -d out src/*.java
+jar cfm TOTPGenerator.jar MANIFEST.MF -C out .
 ```
+
+コンパイルされた `.class` ファイルは `out/` に出力され、ルートディレクトリに `TOTPGenerator.jar` が生成されます。
 
 ## Run
 
